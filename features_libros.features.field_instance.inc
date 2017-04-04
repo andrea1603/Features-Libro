@@ -56,6 +56,47 @@ function features_libros_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-libros-field_autor'.
+  $field_instances['node-libros-field_autor'] = array(
+    'bundle' => 'libros',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_autor',
+    'label' => 'Autor',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 31,
+    ),
+  );
+
   // Exported field_instance: 'node-libros-field_image'.
   $field_instances['node-libros-field_image'] = array(
     'bundle' => 'libros',
@@ -156,6 +197,7 @@ function features_libros_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Autor');
   t('Descripción');
   t('ISBN');
   t('Image');
