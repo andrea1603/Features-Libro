@@ -19,3 +19,5 @@ features[field_instance][] = node-libros-field_autor
 features[field_instance][] = node-libros-field_image
 features[field_instance][] = node-libros-field_isbn
 features[node][] = libros
+configure = admin/config/people/features_libros
+dependencies[] = entity
